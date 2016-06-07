@@ -1,0 +1,112 @@
+/*Barra de Menu */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropdown-toggle{
+	font : status-bar;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    border-bottom-style: solid;
+    border-bottom-color: background;
+}
+
+li a, .dropdown-toggle:hover{
+	text-decoration: none;
+	border-bottom-style: solid;
+	border-bottom-color: red;
+	color: #2E64FE;
+}
+
+li a, .disable{
+	font : status-bar;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+	text-decoration: none;
+	border-bottom-style: solid;
+	color: #D8D8D8;
+	border-bottom-color: background;
+}
+
+li a, .disable:hover{
+	text-decoration: none;
+	border-bottom-style: solid;
+	color: #D8D8D8;
+	border-bottom-color: background;
+}
+
+li a, .dropdown-toggle:focus{
+	text-decoration: none;
+	border-bottom-style: solid;
+	border-bottom-color: red;
+	color: #2E64FE;
+}
+
+li a.submenu{
+	text-decoration: none;
+	border-bottom-style: none;
+}
+
+li a.submenu:hover{
+	color: blue;
+}
+
+li a.data{
+	text-decoration: none;
+	border-bottom-style: none;
+}
+
+
+.carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 70%;
+      margin: auto;
+      max-height: 400px;
+  }
+  
+.rodape{
+	color: #424242;
+	text-align: center;
+	font: status-bar;
+	background-color: #EFFBF5;
+}
+
+.rodape :hover{
+	text-decoration: none;
+	color: #424242;
+}
+
+.header-login{
+	background-color: #2E64FE;
+	color: white;
+	font: status-bar;
+	font-size: x-large;
+	text-align: center;
+}
+
+ol.carousel-indicators li{
+	border-color: black;
+}
+
+ol.carousel-indicators li:BEFORE{
+	background-color: blue;
+}
+
+div.item, div.active, h3.centro{
+	text-align: center;
+}
+
+p {
+	text-align: justify;
+}
