@@ -12,14 +12,13 @@
 		<div class="col-md-2">
 		</div>
 		<div class="col-md-8">
-				<h2><b> Serviços ></b>&nbsp;
-					Desenvolvimento
-				</h2>
+			<h2>
+				<b>Serviços ></b>&nbsp;Desenvolvimento
+			</h2>
 		</div>
 	</div>
 		
 	<div class="container-fluid">
-		
 		<div class="col-md-2">
 		</div>
 		<div class="col-md-8" >
@@ -45,11 +44,8 @@
 					nós podemos fazer. 
 				</p>
 			</div>
-			
-			
 		</div>
 	</div>	
-		
 	<hr />
 	<c:import url="rodape.jsp"></c:import>
 </body>

@@ -9,6 +9,8 @@
 <body>
 	<c:import url="menu.jsp"></c:import>
 	
+	
+	
 	<div class="container-fluid" style="background-color: #E0E6F8;">
 		<div class="col-md-2">
 		</div>
@@ -54,6 +56,24 @@
   		</div>
 	</div>
 	
+	<div class="container">
+		<div class="col-md-2">
+		</div>
+		<div class="col-md-8 mark">
+			<c:if test="${not empty sucesso}">
+				<div class="alert alert-success fade in">
+    				<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+    				<strong>Cadastro realizado com sucesso!</strong>&nbsp;Faça seu login
+  				</div>
+  			</c:if>
+  			<c:if test="${not empty erroLogin}">
+				<div class="alert alert-danger fade in">
+    				<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+    				<strong>Usuário ou senha inválidos!</strong>&nbsp;Faça seu login novamente.
+  				</div>
+  			</c:if>
+		</div>
+	</div>
 	
 	<hr />
 	<c:import url="rodape.jsp"></c:import>
