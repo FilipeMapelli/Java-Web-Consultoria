@@ -15,15 +15,15 @@ import br.com.fms.consultoria.modelo.Usuario;
 public class OrcamentoController {
 	
 	@Autowired
-	private OrcamentoDao oDao;
+	private OrcamentoDao orcamentoDao;
 
 	@RequestMapping("salvaOrcamento")
 	public String salvaOrcamento(Orcamento orcamento, HttpSession session, @RequestParam("id") Long id){
 		Usuario usuario = new Usuario();
 		usuario.setId(id);
 		orcamento.setUsuario(usuario);
-		oDao.salvar(orcamento);
-		session.setAttribute("orcamentos", oDao.listaOrcamentosPorUsuario(usuario.getId()));
+		orcamentoDao.salvar(orcamento);
+		session.setAttribute("orcamentos", orcamentoDao.listaOrcamentosPorUsuario(usuario.getId()));
 		return "redirect: minhaPagina";
 	}
 	

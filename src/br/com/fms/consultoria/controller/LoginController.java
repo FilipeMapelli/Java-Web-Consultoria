@@ -15,17 +15,17 @@ import br.com.fms.consultoria.modelo.Usuario;
 public class LoginController {
 
 	@Autowired
-	private UsuarioDao dao;
+	private UsuarioDao usuarioDao;
 	@Autowired
-	private OrcamentoDao oDao;
+	private OrcamentoDao orcamentoDao;
 
 	@RequestMapping("efetuaLogin")
 	public String efetuaLogin(Usuario usuario, HttpSession session) {
-		Usuario user = dao.verificaUsuario(usuario);
+		Usuario user = usuarioDao.verificaUsuario(usuario);
 		if (user != null) {
 			session.setAttribute("usuarioLogado", user);
 			session.setAttribute("orcamentos",
-					oDao.listaOrcamentosPorUsuario(user.getId()));
+					orcamentoDao.listaOrcamentosPorUsuario(user.getId()));
 			return "redirect: minhaPagina";
 		}
 		return "redirect: loginInvalido";

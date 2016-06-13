@@ -65,9 +65,9 @@
   				<p>
   				</p>
   				<br />
-  				<h3>Já possui Cadastro?</h3>
-  				<p>Se você já efetuou seu cadastro, <a href="login">clique aqui</a> 
-  				   e faça agora mesmo seu login.
+  				<h3>Já esta atualizado?</h3>
+  				<p>Se você não tem alterações a fazer, <a href="minhaPagina">clique aqui</a> 
+  				   para retornar.
   				</p>
   			</div>
   		</div>

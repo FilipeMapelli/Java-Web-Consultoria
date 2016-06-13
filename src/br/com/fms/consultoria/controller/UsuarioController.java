@@ -14,7 +14,7 @@ import br.com.fms.consultoria.modelo.Usuario;
 public class UsuarioController {
 
 	@Autowired
-	private UsuarioDao dao;
+	private UsuarioDao usuarioDao;
 
 	@RequestMapping("mostraUsuario")
 	public String mostraUsuario() {
@@ -23,14 +23,14 @@ public class UsuarioController {
 
 	@RequestMapping("editar")
 	public String editar(Usuario usuario, HttpSession session) {
-		dao.editar(usuario);
-		session.setAttribute("usuarioLogado", dao.buscar(usuario.getId()));
+		usuarioDao.editar(usuario);
+		session.setAttribute("usuarioLogado", usuarioDao.buscar(usuario.getId()));
 		return "redirect: minhaPagina";
 	}
 
 	@RequestMapping("efetuaCadastro")
 	public String cadastro(Usuario usuario) {
-		dao.salvar(usuario);
+		usuarioDao.salvar(usuario);
 		return "redirect: cadastroRealizado";
 	}
 
