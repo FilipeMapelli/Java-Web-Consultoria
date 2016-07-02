@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!DOCTYPE hibernate-configuration PUBLIC
-        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
-        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
-
-<hibernate-configuration>
+<hibernate-configuration
+	xmlns="http://www.hibernate.org/xsd/hibernate-configuration"
+	xsi:schemaLocation="http://www.hibernate.org/xsd/hibernate-configuration hibernate-configuration-4.0.xsd"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
 	<session-factory>
 
@@ -23,22 +22,23 @@
 		<!-- Enable Hibernate's automatic session context management -->
 		<property name="current_session_context_class">thread</property>
 
-		<!-- Disable the second-level cache (Cache de segundo nível)-->
+		<!-- Disable the second-level cache (Cache de segundo nível) -->
 		<property name="cache.provider_class">org.hibernate.cache.internal.NoCacheProvider</property>
 
-		<!-- Echo all executed SQL to stdout (Mostra os SQLs gerados)-->
+		<!-- Echo all executed SQL to stdout (Mostra os SQLs gerados) -->
 		<property name="show_sql">true</property>
-		
-		<!--  -->
+
+		<!-- -->
 		<property name="hibernate.format_sql">true</property>
 
-		<!-- Drop and re-create the database schema on startup (Cria as tabelas do banco)-->
+		<!-- Drop and re-create the database schema on startup (Cria as tabelas 
+			do banco) -->
 		<property name="hbm2ddl.auto">update</property>
 
 		<!-- Mapeamento das entidades -->
 		<mapping class="br.com.fms.consultoria.modelo.Usuario" />
-		<mapping class="br.com.fms.consultoria.modelo.Orcamento" /> 
-		
+		<mapping class="br.com.fms.consultoria.modelo.Orcamento" />
+
 
 	</session-factory>
 
