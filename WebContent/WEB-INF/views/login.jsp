@@ -12,9 +12,8 @@
 	
 	
 	<div class="container-fluid" style="background-color: #E0E6F8;">
-		<div class="col-md-2">
-		</div>
-		<div class="col-md-8">
+		
+		<div class="col-md-8 col-md-offset-2">
 				<h2><b> Login ></b>&nbsp;
 				</h2>
 		</div>
@@ -24,8 +23,8 @@
 		<br /><br />
 		<div>
 			<br />
-			<div class="col-md-2"></div>
-			<div class="col-md-4">
+			
+			<div class="col-md-4 col-md-offset-2">
 				<div class="col-md-12 thumbnail" style="background-color: #E0E6F8;">
   					<form role="form" action="efetuaLogin">
     					<div class="form-group">
@@ -57,9 +56,8 @@
 	</div>
 	
 	<div class="container">
-		<div class="col-md-2">
-		</div>
-		<div class="col-md-8 mark">
+		
+		<div class="col-md-8 col-md-offset-2">
 			<c:if test="${not empty sucesso}">
 				<div class="alert alert-success fade in">
     				<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>

@@ -10,9 +10,8 @@
 	<c:import url="menu.jsp"></c:import>
 	
 	<div class="container-fluid" style="background-color: #E0E6F8;">
-		<div class="col-md-2">
-		</div>
-		<div class="col-md-8">
+		
+		<div class="col-md-8 col-md-offset-2">
 				<h2><b> Cadastro ></b>&nbsp;
 				</h2>
 		</div>
@@ -21,8 +20,8 @@
 	<div class="container">
 		<div>
 			<br />
-			<div class="col-md-2"></div>
-			<div class="col-md-4">
+			
+			<div class="col-md-4 col-md-offset-2">
 				<div class="col-md-12 thumbnail" style="background-color: #E0E6F8;">
 		  		
   					<form role="form" action="efetuaCadastro">

@@ -9,9 +9,8 @@
 <body>
 	<c:import url="menu.jsp"></c:import>
 	<div class="container-fluid" style="background-color: #E0E6F8;">
-		<div class="col-md-2">
-		</div>
-		<div class="col-md-8">
+	
+		<div class="col-md-8 col-md-offset-2">
 			<h2>
 				<b>Serviços ></b>&nbsp;Desenvolvimento
 			</h2>
@@ -19,13 +18,12 @@
 	</div>
 		
 	<div class="container-fluid">
-		<div class="col-md-2">
-		</div>
-		<div class="col-md-8" >
+		
+		<div class="col-md-8 col-md-offset-2" >
 			<div class="col-md-7" align="center">
 				<div>
 					<br /><br /><br />
-					<img class="thumbnail" alt="" src="images/coder.jpg">
+					<img class="thumbnail img-responsive" alt="" src="images/coder.jpg">
 				</div>
 			</div>
 			<div class="col-md-5">

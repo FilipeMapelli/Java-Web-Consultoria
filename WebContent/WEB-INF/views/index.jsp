@@ -26,7 +26,7 @@
     <div class="carousel-inner" role="listbox">
 		
 	<div class="item active">
-        <img src="images/ini.jpg" alt="" width="460" height="345">
+        <img class="img-responsive" src="images/ini.jpg" alt="" width="460" height="345">
         <div class="carousel-caption" style="color: black;">
 			<h1>FeL Consulting.</h1>
 			<h4>Bem vindo(a)! Faça seu cadastro e solicite um orçamento</h4>          	
@@ -36,14 +36,14 @@
 		
 		
       <div class="item">
-        <img src="images/dev.jpg" alt="" width="460" height="345">
+        <img class="img-responsive" src="images/dev.jpg" alt="" width="460" height="345">
         <div class="carousel-caption">
 			<h3 class="centro">Desenvolvimento</h3>          	
         </div>
       </div>
 
       <div class="item">
-        <img src="images/con.jpg" alt="" width="460" height="345">
+        <img class="img-responsive" src="images/con.jpg" alt="" width="460" height="345">
           	<div class="carousel-caption" style="padding-bottom: 25%; color: black;">
 				<h3 class="centro">Consultoria</h3>          	
         	</div>
@@ -51,7 +51,7 @@
     
       <div class="item">
       
-        <img src="images/ban.jpg" alt="" width="460" height="345">
+        <img class="img-responsive" src="images/ban.jpg" alt="" width="460" height="345">
         
           	<div class="carousel-caption" style="padding-bottom: 31%; color: black;">
 				<h3 class="centro">Banco de Dados</h3>          	

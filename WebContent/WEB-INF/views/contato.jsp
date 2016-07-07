@@ -10,20 +10,18 @@
 	<c:import url="menu.jsp"></c:import>
 	
 	<div class="container-fluid" style="background-color: #E0E6F8;">
-		<div class="col-md-2">
-		</div>
-		<div class="col-md-8">
+	
+		<div class="col-md-8 col-md-offset-2">
 				<h2><b> Contato ></b>&nbsp;
 				</h2>
 		</div>
 	</div>
 	
 	<div class="container">
-		<div class="col-md-2">	
-		</div>
-		<div class="col-md-3">
+	
+		<div class="col-md-3 col-md-offset-2">
 			<br /><br /><br />
-			<img class="thumbnail" alt="" src="images/contato.jpeg">
+			<img class="thumbnail img-responsive" alt="" src="images/contato.jpeg">
 			<h4>Obrigado pelo interesse em nossos serviços!</h4>
 		</div>
 		<div class="col-md-5" style="padding-left: 50px;">

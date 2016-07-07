@@ -10,18 +10,16 @@
 	<c:import url="menu.jsp"></c:import>
 		
 	<div class="container-fluid" style="background-color: #E0E6F8;">
-		<div class="col-md-2">
-		</div>
-		<div class="col-md-8">
+		
+		<div class="col-md-8 col-md-offset-2">
 				<h2><b> Sobre ></b>&nbsp;
 				</h2>
 		</div>
 	</div>
 		
 	<div class="container-fluid">
-		<div class="col-md-2">
-		</div>
-		<div class="col-md-8" >
+		
+		<div class="col-md-8 col-md-offset-2" >
 			<div class="col-md-12">
 				<h2>A FeL Consulting.</h2>
 				<br />
