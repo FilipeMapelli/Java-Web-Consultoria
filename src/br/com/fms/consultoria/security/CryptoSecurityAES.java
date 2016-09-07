@@ -9,7 +9,7 @@ import org.springframework.stereotype.Repository;
 @Repository
 public class CryptoSecurityAES {
 
-	private static String IV = "AAAAAAAAAAAAAAAA";
+	private String IV = "AAAAAAAAAAAAAAAA";
 	private String keyEncryption;
 
 	public CryptoSecurityAES() {

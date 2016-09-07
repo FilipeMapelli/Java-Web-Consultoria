@@ -27,8 +27,10 @@ public class LoginController {
 			session.setAttribute("orcamentos",
 					orcamentoDao.listaOrcamentosPorUsuario(user.getId()));
 			return "redirect: minhaPagina";
+		}else{
+			return "redirect: loginInvalido";
 		}
-		return "redirect: loginInvalido";
+		
 	}
 
 	@RequestMapping("loginInvalido")

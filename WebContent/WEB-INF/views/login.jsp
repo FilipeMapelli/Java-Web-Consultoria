@@ -34,7 +34,7 @@
     					</div>
     					<div class="form-group">
       						<label for="pwd">Senha:</label>
-      						<input type="password" class="form-control" name="senha" placeholder="Entre sua senha"
+      						<input type="password" class="form-control" name="senhaNaoCriptografada" placeholder="Entre sua senha"
       							required="required">
     					</div>
     					<div class="checkbox">

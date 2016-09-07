@@ -11,12 +11,12 @@ public class Usuario extends Modelo {
 	private String nome;
 	@Column(length = 20, nullable = false)
 	private String nomeUsuario;
-	@Column(length = 50, nullable = false)
+	@Column(unique = true, length = 50, nullable = false)
 	private String email;
 	@Column(length = 20)
 	private String fone;
 	@Column(length = 20, nullable = false)
-	private String senha;
+	private byte[] senha;
 
 	@Transient
 	private String senhaNaoCriptografada;
@@ -53,11 +53,11 @@ public class Usuario extends Modelo {
 		this.fone = fone;
 	}
 
-	public String getSenha() {
+	public byte[] getSenha() {
 		return senha;
 	}
 
-	public void setSenha(String senha) {
+	public void setSenha(byte[] senha) {
 		this.senha = senha;
 	}
 

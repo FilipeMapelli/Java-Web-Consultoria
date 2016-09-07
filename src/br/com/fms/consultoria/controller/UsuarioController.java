@@ -38,7 +38,7 @@ public class UsuarioController {
 		try {
 			user.setSenha(criptografar.encrypt(usuario
 					.getSenhaNaoCriptografada(),criptografar
-					.getKeyEncryption()).toString());
+					.getKeyEncryption()));
 		} catch (Exception e) {
 			throw new RuntimeException("Erro ao criptografar",e); 
 		}
