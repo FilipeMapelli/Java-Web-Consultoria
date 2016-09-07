@@ -2,6 +2,7 @@ package br.com.fms.consultoria.modelo;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.Transient;
 
 @Entity
 public class Usuario extends Modelo {
@@ -16,6 +17,17 @@ public class Usuario extends Modelo {
 	private String fone;
 	@Column(length = 20, nullable = false)
 	private String senha;
+
+	@Transient
+	private String senhaNaoCriptografada;
+
+	public String getSenhaNaoCriptografada() {
+		return senhaNaoCriptografada;
+	}
+
+	public void setSenhaNaoCriptografada(String senhaNaoCriptografada) {
+		this.senhaNaoCriptografada = senhaNaoCriptografada;
+	}
 
 	public String getNome() {
 		return nome;

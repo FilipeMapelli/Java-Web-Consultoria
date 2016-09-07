@@ -9,12 +9,16 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import br.com.fms.consultoria.dao.UsuarioDao;
 import br.com.fms.consultoria.modelo.Usuario;
+import br.com.fms.consultoria.security.CryptoSecurityAES;
 
 @Controller
 public class UsuarioController {
 
 	@Autowired
 	private UsuarioDao usuarioDao;
+	
+	@Autowired
+	private CryptoSecurityAES criptografar;
 
 	@RequestMapping("mostraUsuario")
 	public String mostraUsuario() {
@@ -30,7 +34,15 @@ public class UsuarioController {
 
 	@RequestMapping("efetuaCadastro")
 	public String cadastro(Usuario usuario) {
-		usuarioDao.salvar(usuario);
+		Usuario user = usuario;
+		try {
+			user.setSenha(criptografar.encrypt(usuario
+					.getSenhaNaoCriptografada(),criptografar
+					.getKeyEncryption()).toString());
+		} catch (Exception e) {
+			throw new RuntimeException("Erro ao criptografar",e); 
+		}
+		usuarioDao.salvar(user);
 		return "redirect: cadastroRealizado";
 	}
 
