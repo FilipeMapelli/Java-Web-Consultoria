@@ -11,7 +11,7 @@
 	
 	<div class="container-fluid" style="background-color: #E0E6F8;">
 		
-		<div class="col-md-8 col-md-offset-2">
+		<div class="col-md-2 col-md-offset-2">
 				<h2><b> Cadastro ></b>&nbsp;
 				</h2>
 		</div>
@@ -67,6 +67,14 @@
   				<p>Se você já efetuou seu cadastro, <a href="login">clique aqui</a> 
   				   e faça agora mesmo seu login.
   				</p>
+  				<div class="col-md-12">
+  				<c:if test="${not empty erro}">
+					<div class="alert alert-danger fade in">
+   						<a href="#" class="close" data-dismiss="alert" aria-label="close">&times;</a>
+    					<strong>Usuário já cadastrado</strong>&nbsp;Acesse o login. 
+  					</div>
+  				</c:if>
+		</div>
   			</div>
   		</div>
 	</div>

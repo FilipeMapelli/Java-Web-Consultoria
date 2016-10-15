@@ -16,7 +16,7 @@ public class UsuarioController {
 
 	@Autowired
 	private UsuarioDao usuarioDao;
-	
+
 	@Autowired
 	private CryptoSecurityAES criptografar;
 
@@ -35,21 +35,30 @@ public class UsuarioController {
 	@RequestMapping("efetuaCadastro")
 	public String cadastro(Usuario usuario) {
 		Usuario user = usuario;
-		try {
-			user.setSenha(criptografar.encrypt(usuario
-					.getSenhaNaoCriptografada(),criptografar
-					.getKeyEncryption()));
-		} catch (Exception e) {
-			throw new RuntimeException("Erro ao criptografar",e); 
+		if (usuarioDao.verificaEmail(usuario) == null) {
+			try {
+				user.setSenha(
+						criptografar.encrypt(usuario.getSenhaNaoCriptografada(), criptografar.getKeyEncryption()));
+			} catch (Exception e) {
+				throw new RuntimeException("Erro ao criptografar", e);
+			}
+			usuarioDao.salvar(user);
+			return "redirect: cadastroRealizado";
+		}else{
+			return "redirect: erroCadastro";
 		}
-		usuarioDao.salvar(user);
-		return "redirect: cadastroRealizado";
 	}
 
 	@RequestMapping("cadastroRealizado")
 	public String mensagem(Model model) {
 		model.addAttribute("sucesso", "sucesso");
 		return "login";
+	}
+	
+	@RequestMapping("erroCadastro")
+	public String mensagemErro(Model model) {
+		model.addAttribute("erro", "erro");
+		return "formulario-cadastro";
 	}
 
 }

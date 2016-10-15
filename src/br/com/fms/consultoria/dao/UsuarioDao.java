@@ -19,10 +19,8 @@ public class UsuarioDao extends GenericDao<Usuario>{
 			CryptoSecurityAES crypt = new CryptoSecurityAES();
 			String senha = null;
 			
-			Criteria consulta = sessao.createCriteria(Usuario.class);
-			Usuario user = (Usuario) consulta.add(Restrictions
-					.eq("email", usuario.getEmail()))
-					.uniqueResult();
+			Usuario user = verificaEmail(usuario);
+			
 			try {
 				if (user!= null){
 					senha = crypt.decrypt(user.getSenha(), crypt.getKeyEncryption());
@@ -44,5 +42,20 @@ public class UsuarioDao extends GenericDao<Usuario>{
 			sessao.close();
 		}
 	}
+	
+	public Usuario verificaEmail(Usuario usuario){
+		Session sessao = HibernateUtil.getFabricaDeSessoes().openSession();
+		
+		try {
+			Criteria consulta = sessao.createCriteria(Usuario.class);
+			return (Usuario) consulta.add(Restrictions
+					.eq("email", usuario.getEmail()))
+					.uniqueResult();
+		} finally {
+			sessao.close();
+		}
+	}
+	
+	
 		
 }
