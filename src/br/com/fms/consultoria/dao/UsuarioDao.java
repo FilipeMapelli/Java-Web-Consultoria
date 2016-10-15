@@ -14,7 +14,6 @@ public class UsuarioDao extends GenericDao<Usuario>{
 	
 	public Usuario verificaUsuario(Usuario usuario){
 		
-		Session sessao = HibernateUtil.getFabricaDeSessoes().openSession();
 		try{	
 			CryptoSecurityAES crypt = new CryptoSecurityAES();
 			String senha = null;
@@ -37,9 +36,6 @@ public class UsuarioDao extends GenericDao<Usuario>{
 		}
 		catch(RuntimeException erro){
 			throw erro;
-		}
-		finally{
-			sessao.close();
 		}
 	}
 	
