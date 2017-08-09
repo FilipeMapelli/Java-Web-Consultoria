@@ -30,10 +30,8 @@
 			<p>De segunda a sexta das 9h às 18h</p>
 			<h3>Telefone:</h3>
 			<p>11 96856-5503 - Filipe</p>
-			<p>11 95320-9740 - Laerte</p>
 			<h3>E-mail:</h3>
 			<p>filipemapellis@gmail.com</p>
-			<p>laerte.r@live.com</p>
 		</div>
 	</div>
 	
