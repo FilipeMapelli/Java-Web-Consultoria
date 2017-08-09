@@ -28,7 +28,7 @@
 	<div class="item active">
         <img class="img-responsive" src="images/ini.jpg" alt="" width="460" height="345">
         <div class="carousel-caption" style="color: black;">
-			<h1>FeL Consulting.</h1>
+			<h1>FMS Consulting.</h1>
 			<h4>Bem vindo(a)! Faça seu cadastro e solicite um orçamento</h4>          	
         </div>
       </div>	
