@@ -34,7 +34,7 @@
   					<li><a class="dropdown-toggle" href="home">
     					<span class="glyphicon glyphicon-home"></span>&nbsp;Home</a>
     				</li>
-  					<li><a class="dropdown-toggle" href="sobre">Sobre a FeL</a></li>
+  					<li><a class="dropdown-toggle" href="sobre">Sobre a FMS</a></li>
     				<li><a class="dropdown-toggle" href="#" data-toggle="dropdown">Serviços</a>
     					<ul class="dropdown-menu">
       						<li><a class="submenu" href="consultoria">Consultoria</a></li>

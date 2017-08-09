@@ -21,15 +21,14 @@
 		
 		<div class="col-md-8 col-md-offset-2" >
 			<div class="col-md-12">
-				<h2>A FeL Consulting.</h2>
+				<h2>A FMS Consulting.</h2>
 				<br />
 				<p>
-					Tudo começou a pouco tempo, no início deste 1º semestre de 2016, com um trabalho 
-					acadêmico proposto pelo Mestre Bruno Zolotareff dos Santos, que consistia em fazer um 
-					projeto web com Java. Este desafio nos despertou tanto que fomos em busca de mais 
-					conhecimento, sempre focando o que há de melhor em tecnologia, e conseguimos resultados 
-					para nós até então surpreendentes.  
-				 
+					Tudo começou no início do 1º semestre de 2016, com um trabalho 
+					acadêmico proposto pelo Mestre Bruno Zolotareff dos Santos, que tinha como objetivo a
+					construção de um projeto web com Java. Este desafio me despertou tanto que fui em 
+					busca de mais conhecimento, sempre focando no que há de melhor em tecnologia, 
+					e obtive resultados(para mim) surpreendentes.  
 				</p>
 				<p>
 					Este projeto é exatamente o site que você está navegando neste momento! Ele foi 
@@ -38,22 +37,11 @@
 					mestre, que sempre "martelava" em nossa cabeça, que para conseguir alguma coisa é preciso
 					saber Frameworks, surge o nosso diferencial, o uso do Hibernate e do Spring MVC.       
 				</p>
+				
 				<p>
-					Por isso podemos dizer que somos uma empresa jovem e inovadora, a partir da idéia de dois
-					universitários que são apaixonados por tecnologia, especificamente programação.
-					Estes são Filipe Mapelli Siqueira e Laerte Lima, ambos cursando Ciência da 
-					Computação na FMU. 
-				</p>
-				<p>
-					Queremos entrar no mercado para oferecer serviços de qualidade, por isso nos esforçamos
-					a cada dia em busca de aprendizado para criar soluções com o que há de mais moderno 
-					na atualidade. 
-				</p>
-				<p>
-					O código fonte deste projeto está disponível no GitHub, para quem quiser dar uma olhada
-					acesse www.github.com/filipemapelli ou <a 
+					O código fonte deste projeto está disponível no GitHub em <a 
 						href="http://www.github.com/filipemapelli" target="_blank">
-							clique aqui.</a> 
+							http://www.github.com/filipemapelli</a> 
 				</p>
 			</div>
 		</div>
