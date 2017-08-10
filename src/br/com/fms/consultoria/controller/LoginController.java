@@ -30,7 +30,6 @@ public class LoginController {
 		}else{
 			return "redirect: loginInvalido";
 		}
-		
 	}
 
 	@RequestMapping("loginInvalido")

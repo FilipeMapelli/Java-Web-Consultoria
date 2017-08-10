@@ -16,18 +16,6 @@ public class CryptoSecurityAES {
 		this.keyEncryption = "0123456789abcdef";
 	}
 
-	/*
-	 * Encrypt or Decrypt
-	 * 
-	 * try {
-	 * 
-	 * byte[] textoencriptado = encrypt(textopuro, chaveencriptacao);
-	 *  
-	 * String textodecriptado = decrypt(textoencriptado, chaveencriptacao);
-	 * 
-	 * } catch (Exception e) { e.printStackTrace(); } 
-	 */
-
 	public String getKeyEncryption() {
 		return keyEncryption;
 	}
